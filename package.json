@@ -1,0 +1,12 @@
+{
+  "name": "rspack-module-federation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm -r --filter './apps/*' dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
