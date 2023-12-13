@@ -55,7 +55,7 @@ module.exports = {
   },
   plugins: [
     new rspack.container.ModuleFederationPlugin({
-      name: "buildtime",
+      name: "runtime",
       filename: "remoteEntry.js",
       exposes: {
         "./App": "./src/App"

@@ -27,7 +27,7 @@ export const Layout = () => {
             <Link to="/a-remote-app">Remote</Link>
           </li>
           <li>
-            <Link to="/buildtime">Build Time Remote</Link>
+            <Link to="/runtime">Run Time Remote</Link>
           </li>
           <li>
             <Link to="/about">About</Link>

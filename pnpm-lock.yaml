@@ -82,7 +82,7 @@ importers:
         specifier: ^5.0.4
         version: 5.3.3
 
-  apps/rspack-remote-buildtime-routes:
+  apps/rspack-remote-runtime-routes:
     dependencies:
       react:
         specifier: ^18.2.0
