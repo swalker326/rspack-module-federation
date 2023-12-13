@@ -10,6 +10,7 @@ module.exports = {
     main: "./src/main.tsx"
   },
   devServer: {
+    historyApiFallback: true,
     port: 3000
   },
   module: {

@@ -10,6 +10,7 @@ module.exports = {
     main: "./src/main.tsx"
   },
   devServer: {
+    historyApiFallback: true,
     port: 3001
   },
   module: {
@@ -57,8 +58,8 @@ module.exports = {
       name: "remote",
       filename: "remoteEntry.js",
       exposes: {
-        "./App": "./src/App"
-        // "./updateRoutes": "./src/router/updateRoutes.tsx"
+        "./App": "./src/App",
+        "./routes": "./src/routes.tsx"
       },
       shared: {
         // eager?: boolean;

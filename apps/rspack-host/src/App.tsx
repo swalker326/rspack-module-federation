@@ -8,21 +8,18 @@ function App() {
   return (
     <div className="App">
       <div>
-        <Link to="/remote">Remote</Link>
-        <Link to="/about">About</Link>
+        <h1>Host App </h1>
+        <ul style={{ listStyle: "none", display: "flex", gap: "15px" }}>
+          <li>
+            <Link to="/a-remote-app">Remote</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+        </ul>
+        <pre>rspack_host/App.tsx</pre>
+        <button onClick={() => setCount(count + 1)}>Host State {count}</button>
       </div>
-      <h1>Rspack + React + TypeScript</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Rspack and React logos to learn more
-      </p>
       <Outlet />
     </div>
   );
