@@ -11,7 +11,7 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    port: 3001
+    port: 3002
   },
   module: {
     rules: [
@@ -55,11 +55,10 @@ module.exports = {
   },
   plugins: [
     new rspack.container.ModuleFederationPlugin({
-      name: "remote",
+      name: "buildtime",
       filename: "remoteEntry.js",
       exposes: {
-        "./App": "./src/App",
-        "./routes": "./src/routes.tsx"
+        "./App": "./src/App"
       },
       shared: {
         // eager?: boolean;

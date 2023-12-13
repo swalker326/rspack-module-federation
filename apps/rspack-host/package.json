@@ -7,6 +7,7 @@
     "build": "NODE_ENV=production rspack build"
   },
   "dependencies": {
+    "@module-federation/utilities": "^3.0.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",

@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { Component } from "./Component";
+import { View } from "./routes/view";
 import { IndexRoute } from "./routes/index";
 
 export const routes = [
@@ -13,7 +13,7 @@ export const routes = [
       },
       {
         path: "view",
-        element: <Component />
+        element: <View />
       }
     ]
   }
