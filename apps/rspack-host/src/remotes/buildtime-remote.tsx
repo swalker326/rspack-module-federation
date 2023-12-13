@@ -1,5 +1,5 @@
 import { Suspense, lazy } from "react";
-import { importRemote } from "@module-federation/utilities";
+import { importRemote } from "@module-federation/utilities/src/utils/importRemote";
 
 const Buildtime = lazy(() =>
   importRemote({
