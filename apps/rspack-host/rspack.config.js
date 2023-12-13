@@ -60,18 +60,9 @@ module.exports = {
         remote: "remote@http://localhost:3001/remoteEntry.js"
       },
       shared: {
-        // eager?: boolean;
-        // import?: false | SharedItem;
-        // packageName?: string;
-        // requiredVersion?: false | string;
-        // shareKey?: string;
-        // shareScope?: string;
-        // singleton?: boolean;
-        // strictVersion?: boolean;
-        // version: false | string;
-        react: { eager: true },
-        "react-dom": { eager: true },
-        "react-router-dom": { eager: true }
+        react: { eager: true, singleton: true },
+        "react-dom": { eager: true, singleton: true },
+        "react-router-dom": { eager: true, singleton: true }
       }
     }),
     new rspack.DefinePlugin({
